@@ -15,13 +15,13 @@ To run this project locally, follow these steps:
 1. Clone the Git repository:
 
     ```bash
-     git clone https://github.com/your-username/your-repository.git
+     git clone https://github.com/mirsahib/stiboDx.git
 
     ```
 
 2. Installation
     ```bash
-    cd your-repository
+    cd stiboDx
     docker-compose up
     ```
 
