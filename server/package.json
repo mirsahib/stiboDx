@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node ./src/index.ts",
+    "start": "node ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "createUser": "curl -X POST http://localhost:3000/api/users -H \"Content-Type: application/json\" -d '{\"firstName\": \"John\", \"lastName\": \"Doe\", \"password\": \"securepassword\", \"email\": \"john.doe@example.com\"}'",
+    "getAllUser": "curl -H \"Content-Type: application/json\" http://localhost:3000/api/users",
+    "getUser": "curl -H \"Content-Type: application/json\" http://localhost:3000/api/users/2edd3c3e-9a55-44ba-8874-49c68d195b37",
+    "updateUser": "curl -H \"Content-Type: application/json\" -X PUT -d '{\"user\": \"example_user1\", \"email\": \"pK5Qc@example.com\"}' http://localhost:3000/api/users/2edd3c3e-9a55-44ba-8874-49c68d195b37",
+    "deleteUser": "curl -H \"Content-Type: application/json\" -X DELETE http://localhost:3000/api/users/2edd3c3e-9a55-44ba-8874-49c68d195b37"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.5",
+    "nodemon": "^3.0.2",
+    "pg": "^8.11.3",
+    "sequelize": "^6.35.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "ts-node": "^10.9.2"
+  }
+}
