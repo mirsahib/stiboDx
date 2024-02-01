@@ -4,6 +4,10 @@
 
 This repository provides a set of RESTful APIs for user management. The APIs allow you to perform basic CRUD operations on user data, including creating a new user, retrieving all users, retrieving a specific user, updating a user, and deleting a user.
 
+## Video
+
+Youtube: https://youtu.be/0XFqZYgFRh4
+
 ## Installation
 
 To run this project locally, follow these steps:
